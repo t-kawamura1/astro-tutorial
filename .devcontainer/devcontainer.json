@@ -1,0 +1,17 @@
+{
+  "name": "astro-tutorial",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node",
+  // "appPort": ["3030:3030"],
+  "runArgs": [
+    "--name",
+    "astro-tutorial"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "astro-build.astro-vscode",
+        "shd101wyy.markdown-preview-enhanced"
+      ]
+    }
+  }
+}
