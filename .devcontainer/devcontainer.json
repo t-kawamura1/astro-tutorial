@@ -10,6 +10,7 @@
     "vscode": {
       "extensions": [
         "astro-build.astro-vscode",
+				"eamodio.gitlens",
         "shd101wyy.markdown-preview-enhanced"
       ]
     }
