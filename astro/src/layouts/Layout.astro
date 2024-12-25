@@ -1,5 +1,5 @@
 ---
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 type Props = {
@@ -19,7 +19,7 @@ const { title } = Astro.props;
 		<title>{title ? `${title} | Astro Tutorial` : 'Astro Tutorial'}</title>
 	</head>
 	<body>
-		<Navigation />
+		<Header />
 		<slot />
 		<Footer />
 	</body>
