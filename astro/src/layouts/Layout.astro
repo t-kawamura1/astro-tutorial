@@ -1,4 +1,6 @@
 ---
+import Navigation from "../components/Navigation.astro"
+
 type Props = {
 	title?: string,
 };
@@ -16,6 +18,7 @@ const { title } = Astro.props;
 		<title>{title ? `${title} | Astro Tutorial` : 'Astro Tutorial'}</title>
 	</head>
 	<body>
+		<Navigation></Navigation>
 		<slot />
 	</body>
 </html>
