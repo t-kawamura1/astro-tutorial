@@ -10,4 +10,5 @@ export default defineConfig({
       },
     },
   },
+  site: 'https://astro-tutorial-silk.vercel.app'
 });
