@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import BaseLayout from "../layouts/BaseLayout.astro"
 import '../styles/global.css';
 
 const pageTitle = "私について";
@@ -22,9 +22,8 @@ const fontWeight = "bold";
 const textCase = "uppercase"
 ---
 
-<Layout title={pageTitle}>
+<BaseLayout title={pageTitle}>
   <section>
-    <h1>私について</h1>
     <h2>... そして私の新しいAstroサイトについて！</h2>
     <p>私はAstroの入門チュートリアルを進めています。これは私のウェブサイトの2番目のページで、自分で作った初めてのページです！</p>
     <p>このサイトはチュートリアルを進めるにつれて更新されていきます。定期的にチェックして、私の旅の様子を見に来てください！</p>
@@ -44,13 +43,9 @@ const textCase = "uppercase"
     {finished && <p>I finished this tutorial! このチュートリアルを終えました！</p>}
     {goal === 3 ? <p>My goal is to finish in 3 days. 3日で終えるのが目標です。</p> : <p>My goal is not 3 days. 3日が目標ではありません。</p>}
   </section>
-</Layout>
+</BaseLayout>
 
 <style define:vars={{skillColor, fontWeight, textCase}}>
-  h1 {
-    color: purple;
-    font-size: 4rem;
-  }
   .skill {
     color: var(--skillColor);
     font-weight: var(--fontWeight);
